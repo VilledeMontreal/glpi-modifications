@@ -133,6 +133,11 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
 			background: url(cloud.png) no-repeat;		
 			background-size: cover; 		
 		}
+
+<?php
+echo file_get_contents(GLPI_MOD_USER_CSS_PATH);
+?>
+
 	</style>      
     
 </head>
