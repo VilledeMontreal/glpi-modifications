@@ -135,7 +135,7 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
 		}
 
 <?php
-echo file_get_contents(GLPI_MOD_USER_CSS_PATH);
+echo file_get_contents(GLPI_MOD_CUSTOM_LOGIN_CSS_PATH);
 ?>
 
 	</style>      
