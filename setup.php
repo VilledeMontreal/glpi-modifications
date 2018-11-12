@@ -25,16 +25,7 @@ function plugin_init_mod() {
 	   //$PLUGIN_HOOKS['add_javascript']['mod'] = "scripts/mod.js";
 	   $PLUGIN_HOOKS['add_javascript']['mod'][] = "scripts/stats.js";
 	   $PLUGIN_HOOKS['add_javascript']['mod'][] = "scripts/ind.js";
-           //Create editable basepath, if missing.
-           if ( ! is_writable(GLPI_MOD_FILES_DIR)) {
-              mkdir(GLPI_MOD_FILES_DIR);
-           }
-
-           //Add user customizable file if missing
-           if( ! file_exists(GLPI_MOD_USER_CSS_PATH)) {
-              file_put_contents(GLPI_MOD_USER_CSS_PATH, '/* Write custom login CSS after this */');
-           }
- 	}
+   }
 }
 
 
