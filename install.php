@@ -13,8 +13,8 @@ if(!is_file(GLPI_ROOT.'/index.php.bak')) {
 	   mkdir(GLPI_MOD_FILES_DIR);
 	}
 
-	if( ! file_exists(GLPI_MOD_USER_CSS_PATH)) {
-	   file_put_contents(GLPI_MOD_USER_CSS_PATH, '/* Write custom CSS for login page here */');
+	if( ! file_exists(GLPI_MOD_CUSTOM_LOGIN_CSS_PATH)) {
+	   file_put_contents(GLPI_MOD_CUSTOM_LOGIN_CSS_PATH, '/* Write custom CSS for login page here */');
 	}
 	
 	rename(GLPI_ROOT.'/index.php', GLPI_ROOT.'/index.php.bak');
