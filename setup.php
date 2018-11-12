@@ -4,8 +4,8 @@ if (!defined("GLPI_MOD_FILES_DIR")) {
    define("GLPI_MOD_FILES_DIR", GLPI_ROOT."/files/_plugins/mod");
 }
 
-if (!defined("GLPI_MOD_USER_CSS_PATH")) {
-   define("GLPI_MOD_USER_CSS_PATH", GLPI_MOD_FILES_DIR.'/userstyles.css');
+if (!defined("GLPI_MOD_CUSTOM_LOGIN_CSS_PATH")) {
+   define("GLPI_MOD_CUSTOM_LOGIN_CSS_PATH", GLPI_MOD_FILES_DIR.'/loginstyles.css');
 }
 
 function plugin_init_mod() {
